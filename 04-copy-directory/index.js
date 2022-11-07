@@ -25,7 +25,7 @@ try {
       // coping to files-copy folder
       await fs.copyFile(
         path.join(filesPath, `${files[i]}`),
-        path.join(filesCopyPath, `copy-${files[i]}`)
+        path.join(filesCopyPath, `${files[i]}`)
       );
     }
     console.log("\n\nFiles copied!");
