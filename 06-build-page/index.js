@@ -2,14 +2,6 @@ const fsPromise = require("fs/promises"),
   fs = require("fs"),
   path = require("path");
 
-// File path
-// const projectDistPath = path.join(__dirname, "project-dist");
-// const assetsPath = path.join(__dirname, "assets");
-// const assetsCopyPath = path.join(__dirname, "project-dist", "assets");
-// const stylesPath = path.join(__dirname, "styles");
-// const componentsDirectoryPath = path.join(__dirname, "components");
-// const templateHTMLFilePath = path.join(__dirname, "template.html");
-
 const projectDistPath = path.join(__dirname, "project-dist");
 const assetsDirectoryPath = path.join(__dirname, "assets");
 const assetsDirectoryCopyPath = path.join(__dirname, "project-dist", "assets");
