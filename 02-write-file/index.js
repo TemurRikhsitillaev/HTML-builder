@@ -18,8 +18,8 @@ stdout.write("Enter text: \n");
 
 stdin.on("data", (text) => {
   // if input is "exit" , then stop reading script
-  if(text.toString().trim() == "exit") exit();
-  
+  if (text.toString().trim() == "exit") exit();
+
   // add input to .txt file in notes folder
   fs.appendFile(path.join(__dirname, "notes", "note.txt"), text, (err) => {
     if (err) throw err;
@@ -29,7 +29,7 @@ stdin.on("data", (text) => {
 
 // process of exit
 process.on("exit", (code) => {
-  if (code == 0 || code=="exit") {
+  if (code == 0 || code == "exit") {
     stdout.write("\n\nSee you next time )");
   } else {
     stdout.write(`Smth went wrong, ${code} (`);
