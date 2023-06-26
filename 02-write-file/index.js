@@ -7,6 +7,8 @@ const exitInput = () => {
   exit();
 };
 
+// klfjslkjflskdjfklsdjflsdjflkd
+
 // creates empty note.txt file in notes folder
 fs.writeFile(path.join(__dirname, "note.txt"), "", (err) => {
   if (err) throw err;
